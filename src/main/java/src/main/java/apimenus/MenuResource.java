@@ -27,7 +27,7 @@ public class MenuResource {
      * Constructeur permettant d'initialiser le service avec une interface d'accès aux données
      * @param menuRepo objet implémentant l'interface d'accès aux données
      */
-    public MenuResource( MenuRepositoryInterface menuRepo ){
+    public @Inject MenuResource( MenuRepositoryInterface menuRepo ){
         this.service = new MenuService( menuRepo) ;
     }
 
