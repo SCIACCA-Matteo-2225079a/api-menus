@@ -40,7 +40,7 @@ public class MenuRepositoryMariadb implements MenuRepositoryInterface, Closeable
     public ArrayList<Menu> getAllMenus() {
         ArrayList<Menu> listMenus ;
 
-        String query = "SELECT * FROM API-Menus";
+        String query = "SELECT * FROM `API-Menus`";
 
         // construction et exécution d'une requête préparée
         try ( PreparedStatement ps = dbConnection.prepareStatement(query) ){
